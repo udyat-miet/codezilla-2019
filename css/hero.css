@@ -1,13 +1,13 @@
 #js-particles {
   position: fixed;
   z-index: -999;
-  width: 100vh;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
 }
 
 .hero_container {
   height: 100vh;
-  width: 70vw;
+  width: 80vw;
   padding: 7vh 7vw;
   margin: auto;
   display: flex;
@@ -40,6 +40,6 @@
 
 @media (max-width: 640px) {
   .hero_description p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }

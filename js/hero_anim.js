@@ -1,56 +1,55 @@
 /*
-** See it live at: http://startae.com
-*/
+ ** See it live at: http://startae.com
+ */
 
-particlesJS(
-    'js-particles', {
-      'particles': {
-        'number': {
-          'value': 38
-        },
-        'color': {
-          'value': ['#ff223e', '#5d1eb2', '#ff7300']
-        },
-        'shape': {
-          'type': 'circle'
-        },
-        'opacity': {
-          'value': 1,
-          'random': false,
-          'anim': {
-            'enable': false
-          }
-        },
-        'size': {
-          'value': 3,
-          'random': true,
-          'anim': {
-            'enable': false,
-          }
-        },
-        'line_linked': {
-          'enable': false
-        },
-        'move': {
-          'enable': true,
-          'speed': 2,
-          'direction': 'none',
-          'random': true,
-          'straight': false,
-          'out_mode': 'out'
-        }
+particlesJS('js-particles', {
+  particles: {
+    number: {
+      value: 100
+    },
+    color: {
+      value: ['#ff223e', '#5d1eb2', '#ff7300', '#ffffff']
+    },
+    shape: {
+      type: 'circle'
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      anim: {
+        enable: false
+      }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: false
+      }
+    },
+    line_linked: {
+      enable: false
+    },
+    move: {
+      enable: true,
+      speed: 5,
+      direction: 'none',
+      random: true,
+      straight: false,
+      out_mode: 'out'
+    }
+  },
+  interactivity: {
+    detect_on: 'canvas',
+    events: {
+      onhover: {
+        enable: false
       },
-      'interactivity': {
-        'detect_on': 'canvas',
-        'events': {
-          'onhover': {
-            'enable': false
-          },
-          'onclick': {
-            'enable': false
-          },
-          'resize': true
-        }
+      onclick: {
+        enable: false
       },
-      'retina_detect': true
-  });
+      resize: true
+    }
+  },
+  retina_detect: true
+});
