@@ -1,0 +1,75 @@
+.footer-bg {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23180d1c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23261431' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23351947' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23451e5e' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Footer Section*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #607d8b;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li a {
+  margin: 0 12px;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 8px;
+  align-self: center;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  footer p:last-of-type {
+    text-align: center;
+    margin: 8px 0 16px 0;
+  }
+
+  footer ul li a {
+    margin: 0 16px;
+  }
+}
+
+.fas {
+  color: red;
+}
+
+.fas:hover {
+  color: #28e90f;
+  opacity: 1;
+}
+
+.developer {
+  color: #28e90f;
+  font-size: 1.1em;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.developer:hover {
+  color: red;
+  text-decoration: underline;
+}
