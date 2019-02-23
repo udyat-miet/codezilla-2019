@@ -8,6 +8,54 @@ body {
   line-height: 1.5;
   background: #000;
   -webkit-font-smoothing: antialiased;
+
+  background: linear-gradient(
+    2deg,
+    #000000,
+    #1c0862,
+    #6b1111,
+    #02150d,
+    #000000
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    b15kground-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
 }
 
 /* loader */
@@ -189,9 +237,6 @@ hr {
 
 .team .grid img {
   border-radius: 50%;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 70px;
 }
 
 @media (max-width: 800px) {
