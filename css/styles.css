@@ -6,6 +6,7 @@
 body {
   font-family: 'Montserrat';
   line-height: 1.5;
+  background: #000;
   -webkit-font-smoothing: antialiased;
 }
 

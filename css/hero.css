@@ -1,0 +1,21 @@
+/* .hero_background_anim {
+  height: 100vh;
+} */
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-anim-wrapper {
+  position: fixed;
+  z-index: -500;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient( 120deg, #ff6ec4 0%, #e96d9d 25%, #7873f5 50%, #23a6d5 75%, #23d5ab 100% );
+    -webkit-animation: Gradient 15s ease-in infinite;
+    -moz-animation: Gradient 15s ease-in infinite;
+    animation: Gradient 15s ease-in infinite;
+    background-size: 300% 300%; */
+}
