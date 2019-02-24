@@ -1,21 +1,139 @@
-/* .hero_background_anim {
-  height: 100vh;
-} */
-
 canvas {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.hero-anim-wrapper {
+#hero_background_anim {
   position: fixed;
   z-index: -500;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient( 120deg, #ff6ec4 0%, #e96d9d 25%, #7873f5 50%, #23a6d5 75%, #23d5ab 100% );
-    -webkit-animation: Gradient 15s ease-in infinite;
-    -moz-animation: Gradient 15s ease-in infinite;
-    animation: Gradient 15s ease-in infinite;
-    background-size: 300% 300%; */
+  margin-top: 3rem;
+}
+
+.hero_container {
+  height: 100vh;
+  width: 80vw;
+  padding: 7vh 7vw;
+  margin: auto;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.miet-register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miet-logo img {
+  background: rgb(218, 211, 211);
+  margin-top: 6rem;
+  background-size: cover;
+}
+
+.register_button {
+  margin-top: 6rem;
+  align-self: flex-end;
+  color: black;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  width: 10rem;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  opacity: 0.8;
+  margin-right: 0;
+}
+
+.register_button:hover {
+  background: #d0021b;
+  color: white;
+}
+
+.hero_logo {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_logo img {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.hero_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.hero_description p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.quote-sm blockquote {
+  align-self: center;
+  display: none;
+  margin-top: 2rem;
+}
+
+.quote {
+  display: inline-block;
+  margin: 1em;
+  color: white;
+  align-self: center;
+  overflow: hidden;
+}
+.quote blockquote {
+  background-color: #fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.quote blockquote:before {
+  background-color: #000;
+  bottom: -10%;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-6deg) skew(5deg);
+}
+.quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.quote blockquote cite:before {
+  content: '- ';
+}
+.quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .hero_container {
+    padding: 1vh 1vw;
+  }
+  .hero_logo {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .hero_description p {
+    font-size: 1.1rem;
+  }
 }

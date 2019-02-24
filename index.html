@@ -26,7 +26,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <!-- <link rel="stylesheet" href="css/hero.css" /> -->
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/header.css" />
   </head>
 
   <body>
@@ -37,11 +38,55 @@
       </div>
     </div>
 
-    <!-- <div id="contents">
-      <div id="js-particles" class="hero_background_anim"></div> -->
-    <!-- <div class="hero-anim-wrapper">
-      <div id="hero_background_anim"></div> -->
+    <div id="contents">
+      <div id="header" class="Header">
+        <div class="HeaderGroup">
+          <a href="#About">About</a>
+          <a href="#Rules">Rules</a>
+          <a href="#Schedule">Schedule</a>
+          <a href="#Team">Team</a>
+          <a href="/Contact">Contact</a>
+        </div>
+      </div>
 
+      <div id="hero_background_anim"></div>
+      <div class="hero_container">
+        <div class="miet-register">
+          <div class="miet-logo">
+            <img src="images/mietlogo.png" alt="miet logo" />
+          </div>
+          <a
+            class="register_button"
+            href="https://goo.gl/forms/uaqJOVWr4HOOEmE12"
+            >Register</a
+          >
+        </div>
+        <div class="hero_logo">
+          <img src="images/codezilla.png" alt="codezilla logo" />
+        </div>
+        <div class="hero_description">
+          <p>
+            Pedestal to the coding extravaganza of MIET, Meerut
+          </p>
+        </div>
+
+        <div class="quote-sm">
+          <blockquote class="white_font">
+            “Truth can only be found in one place: the code.”
+            <br />
+            ― Robert C. Martin, Clean Code: A Handbook of Agile Software
+          </blockquote>
+        </div>
+
+        <div class="quote">
+          <blockquote>
+            <p>
+              “Controlling complexity is the essence of computer programming.”
+            </p>
+            <cite>Brian Kernigan</cite>
+          </blockquote>
+        </div>
+      </div>
       <!-- <div class="timeline_wrapper">
         <ul class="timeline">
           <li>
@@ -272,13 +317,24 @@
         false
       );
     </script>
-    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/hero_anim.js"></script> -->
+
+    <script>
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset;
+        header = document.getElementById('header');
+        if (scrollTop > 50) {
+          header.className = 'Header HeaderScroll';
+        } else {
+          header.className = 'Header';
+          console.log(header.classList);
+        }
+      });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://github.com/mrdoob/three.js/blob/master/src/loaders/TextureLoader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
     <script src="https://github.com/mrdoob/three.js/blob/master/src/materials/SpriteMaterial.js"></script>
-    <script src="js/hero_anim2.js"></script>
+    <script src="js/hero_anim.js"></script>
   </body>
 </html>

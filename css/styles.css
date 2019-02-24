@@ -116,15 +116,25 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   padding: 10px 80px;
 }
 
 /* contact panel */
 .special2 {
   display: flex;
+  color: white;
   flex-direction: column;
   align-items: center;
   padding: 100px 80px;
+}
+
+.special2 h3 {
+  font-size: 2rem;
+}
+
+.special2 p {
+  font-size: 1rem;
 }
 
 .grid {
@@ -137,7 +147,7 @@ a:hover {
 hr {
   width: 250px;
   height: 3px;
-  background-color: #3f51b5;
+  background-color: white;
   border: 0;
   margin-bottom: 50px;
 }
@@ -147,6 +157,7 @@ hr {
   font: bold 32px 'Open Sans', sans-serif;
   margin-bottom: 30px;
   text-align: center;
+  color: white;
 }
 
 .special p {
@@ -155,6 +166,7 @@ hr {
   padding: 0 20px;
   margin-bottom: 30px;
   text-align: center;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -163,13 +175,14 @@ hr {
   }
 
   hr {
-    width: 30%;
+    width: 80%;
   }
 }
 
 /*team Section*/
 .team a {
-  color: #700638;
+  color: white;
+  opacity: 0.9;
 }
 
 .team .grid li {
@@ -179,7 +192,7 @@ hr {
 }
 
 .team .grid li i {
-  color: #8c9eff;
+  color: white;
 }
 
 .team .grid li h4 {
@@ -190,8 +203,7 @@ hr {
 .team .grid img {
   border-radius: 50%;
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 70px;
+  margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -212,13 +224,23 @@ hr {
 }
 
 .contact form .btn {
-  padding: 18px 42px;
+  padding: 1rem 2.5rem;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  /* border-top-width: 0;
+  border-bottom-width: 0; */
+}
+
+.contact form .btn:hover {
+  background: #d0021b;
+  color: white;
 }
 
 .contact form input {
   padding: 15px;
   margin-right: 30px;
-  font-size: 18px;
+  font-size: 1rem;
   color: #555;
   flex: 1;
 }
@@ -237,23 +259,6 @@ hr {
   background-size: cover;
   background-position: center;
 }
-
-.b-team {
-  background-color: #f7e0ff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cg fill='%23d9ccff'%3E%3Cpolygon points='1000%2C-50 0%2C-50 500%2C450'/%3E%3Cpolygon points='550%2C500 1050%2C1000 1050%2C0'/%3E%3Cpolygon points='-50%2C0 -50%2C1000 450%2C500'/%3E%3Cpolygon points='0%2C1050 1000%2C1050 500%2C550'/%3E%3C/g%3E%3Cg fill='%23bcb7ff'%3E%3Cpolygon points='1000%2C-133.3 0%2C-133.3 500%2C366.7'/%3E%3Cpolygon points='633.3%2C500 1133.3%2C1000 1133.3%2C0'/%3E%3Cpolygon points='-133.3%2C0 -133.3%2C1000 366.7%2C500'/%3E%3Cpolygon points='0%2C1133.3 1000%2C1133.3 500%2C633.3'/%3E%3C/g%3E%3Cg fill='%239ea3ff'%3E%3Cpolygon points='1000%2C-216.7 0%2C-216.7 500%2C283.3'/%3E%3Cpolygon points='716.7%2C500 1216.7%2C1000 1216.7%2C0'/%3E%3Cpolygon points='-216.7%2C0 -216.7%2C1000 283.3%2C500'/%3E%3Cpolygon points='0%2C1216.7 1000%2C1216.7 500%2C716.7'/%3E%3C/g%3E%3Cg fill='%23808eff'%3E%3Cpolygon points='1000%2C-300 0%2C-300 500%2C200'/%3E%3Cpolygon points='800%2C500 1300%2C1000 1300%2C0'/%3E%3Cpolygon points='-300%2C0 -300%2C1000 200%2C500'/%3E%3Cpolygon points='0%2C1300 1000%2C1300 500%2C800'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='%23bfffe8' points='0%2C707.1 0%2C292.9 292.9%2C0 707.1%2C0 1000%2C292.9 1000%2C707.1 707.1%2C1000 292.9%2C1000'/%3E%3Cg fill='%23afe3ee'%3E%3Cpolygon points='464.6%2C-242.5 -242.5%2C464.6 464.6%2C464.6'/%3E%3Cpolygon points='535.4%2C464.6 1242.5%2C464.6 535.4%2C-242.5'/%3E%3Cpolygon points='-242.5%2C535.4 464.6%2C1242.5 464.6%2C535.4'/%3E%3Cpolygon points='535.4%2C1242.5 1242.5%2C535.4 535.4%2C535.4'/%3E%3C/g%3E%3Cg fill='%23a0c7f4'%3E%3Cpolygon points='405.7%2C-301.4 -301.4%2C405.7 405.7%2C405.7'/%3E%3Cpolygon points='594.3%2C405.7 1301.4%2C405.7 594.3%2C-301.4'/%3E%3Cpolygon points='-301.4%2C594.3 405.7%2C1301.4 405.7%2C594.3'/%3E%3Cpolygon points='594.3%2C1301.4 1301.4%2C594.3 594.3%2C594.3'/%3E%3C/g%3E%3Cg fill='%2390aaf9'%3E%3Cpolygon points='346.8%2C-360.3 -360.3%2C346.8 346.8%2C346.8'/%3E%3Cpolygon points='653.2%2C346.8 1360.3%2C346.8 653.2%2C-360.3'/%3E%3Cpolygon points='-360.3%2C653.2 346.8%2C1360.3 346.8%2C653.2'/%3E%3Cpolygon points='653.2%2C1360.3 1360.3%2C653.2 653.2%2C653.2'/%3E%3C/g%3E%3Cg fill='%23808eff'%3E%3Cpolygon points='287.9%2C-419.2 -419.2%2C287.9 287.9%2C287.9'/%3E%3Cpolygon points='712.1%2C287.9 1419.2%2C287.9 712.1%2C-419.2'/%3E%3Cpolygon points='-419.2%2C712.1 287.9%2C1419.2 287.9%2C712.1'/%3E%3Cpolygon points='712.1%2C1419.2 1419.2%2C712.1 712.1%2C712.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.b-contact {
-  background-color: #330000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23300'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-/* ================ The Timeline ================ */
 
 .timeline {
   position: relative;
