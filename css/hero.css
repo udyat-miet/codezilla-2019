@@ -33,7 +33,7 @@ canvas {
   background-size: cover;
 }
 
-.register_button {
+/* .register_button {
   margin-top: 6rem;
   align-self: flex-end;
   color: black;
@@ -47,10 +47,31 @@ canvas {
   padding: 7px 0;
   opacity: 0.8;
   margin-right: 0;
+} */
+
+.register_button {
+  background: linear-gradient(
+    104.74deg,
+    rgb(75, 38, 255) 0%,
+    rgb(176, 30, 255) 100%
+  );
+  margin-top: 6rem;
+  align-self: flex-end;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 3px;
+  width: 10rem;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  opacity: 0.8;
+  margin-right: 0;
 }
 
 .register_button:hover {
-  background: #d0021b;
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
   color: white;
 }
 

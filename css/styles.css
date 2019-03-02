@@ -74,6 +74,48 @@ body {
   }
 }
 
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc-wrapper {
+  color: white;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.desc-wrapper:before {
+  content: '';
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: -7;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+}
+
+.desc-wrapper a {
+  color: #7dd871;
+}
+
+.about h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rules {
+  height: 100vh;
+  background: green;
+}
+
 /*  */
 
 ul {
@@ -134,6 +176,7 @@ a:hover {
 }
 
 .special2 p {
+  font-weight: bold;
   font-size: 1rem;
 }
 
@@ -250,6 +293,23 @@ hr {
     flex-basis: 100%;
     margin: 0 0 20px 0;
   }
+}
+
+.timeline_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.timeline_wrapper h3 {
+  color: white;
+  font-size: 2rem;
+  padding-top: 3rem;
+  font-weight: bold;
 }
 
 .b-timeline {
@@ -386,7 +446,7 @@ hr {
 .direction-r .flag:before {
   position: absolute;
   top: 50%;
-  right: -40px;
+  right: -37px;
   content: ' ';
   display: block;
   width: 12px;
@@ -394,12 +454,12 @@ hr {
   margin-top: -10px;
   background: #fff;
   border-radius: 10px;
-  border: 4px solid rgb(255, 80, 80);
+  border: 4px solid #2320bf;
   z-index: 10;
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  left: -35px;
 }
 
 .direction-l .flag:after {
@@ -435,7 +495,7 @@ hr {
 
   line-height: 1em;
   font-size: 0.66666em;
-  color: rgb(250, 80, 80);
+  color: black;
   vertical-align: middle;
 }
 
@@ -450,12 +510,14 @@ hr {
 .time {
   display: inline-block;
   padding: 4px 6px;
+  color: #2320bf;
+  font-weight: bold;
   background: rgb(248, 248, 248);
 }
 
 .desc {
   margin: 1em 0.75em 0 0;
-
+  color: white;
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
@@ -506,7 +568,7 @@ hr {
     margin-left: -9px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid rgb(255, 80, 80);
+    border: 4px solid #2320bf;
     z-index: 10;
   }
 
@@ -520,7 +582,7 @@ hr {
     width: 0;
     margin-left: -8px;
     border: solid transparent;
-    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-color: #2320bf;
     border-width: 8px;
     pointer-events: none;
   }
