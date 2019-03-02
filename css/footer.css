@@ -57,6 +57,10 @@ footer p {
   color: #e0c42b;
 }
 
+.heart {
+  color: #d0021b;
+}
+
 .fas:hover {
   color: #28e90f;
   opacity: 1;

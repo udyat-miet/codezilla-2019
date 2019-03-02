@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Codezilla 2019</title>
-    <meta name="theme-color" content="#00bbbc" />
+    <meta name="theme-color" content="black" />
     <meta
       name="description"
       content="Codezilla is an annual programming competition hosted by MIET, Meerut."
@@ -41,11 +41,11 @@
     <div id="contents">
       <div id="header" class="Header">
         <div class="HeaderGroup">
-          <a href="#About">About</a>
-          <a href="#Rules">Rules</a>
-          <a href="#Schedule">Schedule</a>
-          <a href="#Team">Team</a>
-          <a href="/Contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#rules">Rules</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
 
@@ -82,30 +82,8 @@
 
       <!-- About -->
 
-      <div class="about">
+      <div id="about" class="about-rules">
         <h3>Codezilla 2019</h3>
-
-        <!-- <div class="quote">
-          <div class="desc-wrapper">
-            <blockquote>
-              <p>
-                CodeZilla – the annual coding contest by MIET, Meerut. CodeZilla
-                is now in its 5th season. With the last season we made the
-                competition open for non- Mietians, and had an overwhelming
-                response. With this season we are looking at it getting better,
-                more challenging, super exciting, more rewarding. CodeZilla
-                calls on programmers to put their skills to the test by solving
-                multiple rounds of algorithmic puzzles and win cash prizes worth
-                ₹12k. In addition to being challenging and fun, CodeZilla
-                problems can help you develop your coding and programming
-                skills. So apply and hack through these round to show your
-                coding prowess. Competition will be held at Q-block, MIET Meerut
-                as per <a href="#timeline">schedule</a>.
-              </p>
-            </blockquote>
-          </div>
-        </div> -->
-
         <div class="desc-wrapper">
           <p>
             CodeZilla – the annual coding contest by MIET, Meerut. CodeZilla is
@@ -114,7 +92,8 @@
             season we are looking at it getting better, more challenging, super
             exciting, more rewarding. CodeZilla calls on programmers to put
             their skills to the test by solving multiple rounds of algorithmic
-            puzzles and win cash prizes worth ₹12k. In addition to being
+            puzzles and win cash prizes worth
+            <span style="color: #ffa71b;">₹12k</span>. In addition to being
             challenging and fun, CodeZilla problems can help you develop your
             coding and programming skills. So apply and hack through these round
             to show your coding prowess. Competition will be held at Q-block,
@@ -124,8 +103,50 @@
       </div>
 
       <!-- Rules -->
-
-      <div class="rules"></div>
+      <div id="rules" class="about-rules">
+        <h3>Rules</h3>
+        <div>
+          <ol>
+            <li>
+              All the participants must register themselves on
+              <a
+                href="https://www.hackerrank.com/"
+                style="color: #ffa71b;"
+                target="_blank"
+                >Hackerrank.</a
+              >
+            </li>
+            <li>
+              There is a pre-elimination round for MIETians. (
+              <a href="#timeline" style="color: #ffa71b;">schedule</a>)
+            </li>
+            <li>
+              All MIETians qualified in Round 1 will be able to participate in
+              Round 2.
+            </li>
+            <li>Non-mietians will be able to participate only in round 2.</li>
+            <li>
+              Registration fee of ₹100/-per student is to be paid in cash at
+              registration desk on 24 March
+            </li>
+            <li>
+              Keep CodeChef credentials handy: they will be used to participate
+              in the competition.
+            </li>
+            <li>
+              This is a team event and each team is allowed to have 1-2 members.
+            </li>
+            <li>Any form of plagiarism is strictly prohibited.</li>
+            <li>
+              All the participants are required to carry their college ID CARDS.
+            </li>
+            <li>
+              Computer systems will be provided to all the participants
+              throughout the competition.
+            </li>
+          </ol>
+        </div>
+      </div>
       <!-- Timeline -->
 
       <div class="timeline_wrapper" id="timeline">
@@ -176,7 +197,7 @@
         </ul>
       </div>
 
-      <div class="team special b-team">
+      <div id="team" class="team special b-team">
         <h3 class="title">Behind the scene</h3>
         <h4>Mentors</h4>
         <hr />
@@ -196,15 +217,6 @@
             <h3>Prof. Pradeep Pant</h3>
             <p>Head of Department, Computer Science &amp; Engineering</p>
           </li>
-
-          <!-- <li>
-            <img src="images/prof-ankur.jpg" alt="prof_ankur" />
-            <h3>Mr. Ankur Garg</h3>
-            <p>
-              Associate Professor, Department of Computer Science &amp;
-              Engineering
-            </p>
-          </li> -->
 
           <li>
             <img src="images/prof_aj.jpg" alt="prof_aj" />
@@ -276,7 +288,7 @@
         <ul class="grid"></ul>
       </div>
 
-      <div class="contact special2 b-contact">
+      <div id="contact" class="contact special2 b-contact">
         <h3 class="title">Contact Us</h3>
         <p>Got a question? Feel free to ask :)</p>
         <hr />
@@ -295,7 +307,7 @@
         <p>© 2019 <a href="http://www.miet.ac.in/">MIET, Meerut</a>.</p>
 
         <p>
-          Fabricated with <i class="fas fa-heart"></i> by
+          Fabricated with <i class="fas heart fa-heart"></i> by
           <span>
             <a class="developer" href="http://twitter.com/mravisoni/"
               >Ravi Soni</a
