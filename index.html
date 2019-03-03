@@ -377,16 +377,18 @@
     </script>
 
     <script>
-      window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      function step(timestamp) {
         const scrollTop = window.pageYOffset;
-        header = document.getElementById('header');
         if (scrollTop > 50) {
           header.classList.add('HeaderScroll');
         } else {
           header.classList.remove('HeaderScroll');
           console.log(header.classList);
         }
-      });
+        window.requestAnimationFrame(step);
+      }
+      window.requestAnimationFrame(step);
     </script>
 
     <script>
