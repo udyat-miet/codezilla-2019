@@ -23,6 +23,10 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -39,7 +43,7 @@
     </div>
 
     <div id="contents">
-      <div id="header" class="Header">
+      <div id="header" class="Header animated slideInDown delay-2s faster">
         <div class="HeaderGroup">
           <a href="#about">About</a>
           <a href="#rules">Rules</a>
@@ -51,7 +55,7 @@
 
       <div id="hero_background_anim"></div>
       <div class="hero_container">
-        <div class="miet-register">
+        <div class="miet-register animated fadeInDown delay-2s faster">
           <div class="miet-logo">
             <img src="images/mietlogo.png" alt="miet logo" />
           </div>
@@ -61,16 +65,16 @@
             >Register</a
           >
         </div>
-        <div class="hero_logo">
+        <div class="hero_logo animated flipInX delay-2s">
           <img src="images/codezilla.png" alt="codezilla logo" />
         </div>
-        <div class="hero_description">
+        <div class="hero_description animated fadeInUp delay-2s faster">
           <p>
             Pedestal to the coding extravaganza of MIET, Meerut
           </p>
         </div>
 
-        <div class="quote">
+        <div class="quote animated fadeInUp delay-2s faster">
           <blockquote>
             <p>
               “Controlling complexity is the essence of computer programming.”
@@ -373,16 +377,35 @@
     </script>
 
     <script>
-      window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      function step(timestamp) {
         const scrollTop = window.pageYOffset;
-        header = document.getElementById('header');
         if (scrollTop > 50) {
-          header.className = 'Header HeaderScroll';
+          header.classList.add('HeaderScroll');
         } else {
-          header.className = 'Header';
+          header.classList.remove('HeaderScroll');
           console.log(header.classList);
         }
-      });
+        window.requestAnimationFrame(step);
+      }
+      window.requestAnimationFrame(step);
+    </script>
+
+    <script>
+      let anchors = document.querySelectorAll("a[href^='#'");
+      console.log(anchors);
+      for (let i = 0; i < anchors.length; i++) {
+        anchors[i].onclick = function(e) {
+          e.preventDefault();
+          let target_id = this.href.substring(this.href.indexOf('#'));
+          // because our audience is not legacy
+          document.querySelector(target_id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'center'
+          });
+        };
+      }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
