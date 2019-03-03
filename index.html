@@ -381,9 +381,9 @@
         const scrollTop = window.pageYOffset;
         header = document.getElementById('header');
         if (scrollTop > 50) {
-          header.className = 'Header HeaderScroll';
+          header.classList.add('HeaderScroll');
         } else {
-          header.className = 'Header';
+          header.classList.remove('HeaderScroll');
           console.log(header.classList);
         }
       });
