@@ -77,3 +77,8 @@ footer p {
   color: red;
   text-decoration: underline;
 }
+
+.udyat:hover {
+  color: #28e90f;
+  font-weight: 600;
+}

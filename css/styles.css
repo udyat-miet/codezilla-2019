@@ -10,6 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.grid a:hover {
+  color: #ffa71b;
+  font-weight: 600;
+  opacity: 1;
+}
+
 /* loader */
 
 #load {
